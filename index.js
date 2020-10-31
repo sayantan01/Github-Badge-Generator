@@ -3,8 +3,9 @@ const app=express()
 const bodyParser=require('body-parser')
 const fetch=require('node-fetch')
 const fs=require('fs')
-const pdfcrowd = require("pdfcrowd");
-const client = new pdfcrowd.HtmlToPdfClient("coder", "486bc2e88a9a6b56eb3f090b6e15cfd5");
+const pdfcrowd = require("pdfcrowd")
+const {pdfuser,pdf_password}=require('./config')
+const client = new pdfcrowd.HtmlToPdfClient(pdfuser, pdf_password);
 
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:false}))
