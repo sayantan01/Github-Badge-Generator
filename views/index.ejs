@@ -14,15 +14,12 @@
             <input type="submit" value="Generate Badge" />
         </form>
 
-        <div id="Badge" name="Badge" style="padding-top:30">
-            <img name="avatar" src="<%=imgurl%>" alt="Preview" height=150 width=150 style="border-radius:50%"/ >
-            <pre style="font-size:20px">
-            Dear <%=name%>, <br />
-
-            Thank you for your invaluable contribution to the open-source community.<br /> As a token of appreciation, this badge is being awarded to you. <br />
-
-            Happy coding!!!!!
-            </pre>
+        <div id="Badge" name="Badge" style="margin:30px;padding:50px;border:2px solid red;background-color:black;color:white;font-size:30px;width:70%">
+            <img name="avatar" src="<%=imgurl%>" alt="Preview Image" height=180 width=180 style="border-radius:50%"/ >
+            <p>Dear <i style="color:red"><%=name%></i>,</p>
+            <p>Thank you for your invaluable contribution to the open-source community.</p>
+            <p>As a token of appreciation, this badge is being awarded to you.</p>
+            <p>Happy coding!!!!!</p>
         </div>
         <form method="post" action="/download">
             <input type="submit" value="Download Badge" />
