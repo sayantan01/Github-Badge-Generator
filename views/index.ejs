@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Badge Generator</title>
+</head>
+<div id="root">
+<body>
+    <center>
+        <h1 style="color:red">Get your Github Badge today</h1>
+        <form method="post" action="/avatar">
+            <input type="text" name="username" placeholder="Enter your name here" required />
+            <input type="submit" value="Generate Badge" />
+        </form>
+
+        <div id="Badge" name="Badge" style="padding-top:30">
+            <img name="avatar" src="<%=imgurl%>" alt="Preview" height=150 width=150 style="border-radius:50%"/ >
+            <pre style="font-size:20px">
+            Dear <%=name%>, <br />
+
+            Thank you for your invaluable contribution to the open-source community.<br /> As a token of appreciation, this badge is being awarded to you. <br />
+
+            Happy coding!!!!!
+            </pre>
+        </div>
+        <form method="post" action="/download">
+            <input type="submit" value="Download Badge" />
+        </form>
+    </center>
+</body>
+</div>
+</html>
