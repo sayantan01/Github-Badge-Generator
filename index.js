@@ -53,6 +53,8 @@ app.post('/avatar',async (req,res)=>{
 })
 
 app.post('/download',(req,res)=>{
+	imgurl=imgurl_default
+	name=""
 	res.setHeader('Content-disposition', 'attachment; filename=' + filename);
 	res.download(filename)
 })
