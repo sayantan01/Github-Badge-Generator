@@ -40,7 +40,7 @@ app.post('/avatar',async (req,res)=>{
 			res.sendStatus(404)
 		}
 		client.convertUrlToFile(
-    	"https://git-badge-2020.herokuapp.com/badge",
+    	"https://github-badge-2020.herokuapp.com/badge",
     	filename,
     	function(err, fileName) {
         	if (err) return console.error("Pdfcrowd Error: " + err);
